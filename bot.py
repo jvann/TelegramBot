@@ -12,7 +12,7 @@ def send_greetings(message):
 def send_help(message):
 	bot.reply_to(message, 'Help has arrived! Meep Meep')
 
-@bot.message_handler(comands=['info'])
+@bot.message_handler(commands=['info'])
 def send_info(message):
 	bot.reply_to(message, 'I have the info that you need')
 
