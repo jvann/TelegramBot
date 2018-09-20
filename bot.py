@@ -8,4 +8,8 @@ bot = telebot.TeleBot(token=bot_token)
 def send_greetings(message):
 	bot.reply_to(message, 'Hello, World!')
 
+@bot.message_handler(commands=['help'])
+def send_help(message):
+	bot.reply_to(message, 'Help has arrived! Meep Meep')
+
 bot.polling()
